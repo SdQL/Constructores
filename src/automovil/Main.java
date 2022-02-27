@@ -3,7 +3,14 @@ package automovil;
 
 public class Main {
     public static void main(String[] args) {
-        AutoMovil mustang =new AutoMovil ();
+        //Atributos
+        System.out.println("------------------------------------------------------");
+        AutoMovil mustang =new AutoMovil ("Gris","Ford Mustand","2013");
+        AutoMovil mustang2 =new AutoMovil(420);
+
+
+
+        //Metodos
         System.out.println("----------------------------------------");
         System.out.println(""); System.out.println("Las acciones que puede hacer este vehiculo son: ");
         System.out.println("----------------------------------------");
@@ -13,16 +20,5 @@ public class Main {
         mustang.Frenar();
         mustang.Reversar();
 
-
-        //Atributos
-        System.out.println("");
-        System.out.println("Las caracteristicas del vehiculo son: ");
-        System.out.println("-------------------------------------");
-        System.out.println(mustang.color());
-        System.out.println(mustang.marca());
-        System.out.println(mustang.modelo());
-        System.out.println("El vehiculo tiene "+((int)mustang.caballosmotor())+" Caballos de fuerza");
-        System.out.println("-------------------------------------");
     }
-
-    }
+}

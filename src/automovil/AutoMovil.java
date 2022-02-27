@@ -1,24 +1,22 @@
 package automovil;
 
 public class AutoMovil {
-    static public String color, marca, modelo;
-    static public int caballosmotor;
+    static private String color, marca, modelo;
+    static private int caballosmotor;
+        public AutoMovil(String color, String marca, String modelo) {
+        this.color = color;
+        this.marca = marca;
+        this.modelo = modelo;
+            System.out.println("Se ha creado un objeto de la clase AutoMovil de color "+ this.color+ ", De marca: "+ this.marca+" y es modelo: "+ this.modelo);
+    }
 
-            String color() {
-                return "El color del vehiculo es: Gris";
-            }
+        public AutoMovil(int caballosmotor) {
+            this.caballosmotor=caballosmotor;
+            System.out.println("Se ha creado un objeto de la clase Automovil que posee: "+this.caballosmotor+" Caballos de fuerza");
+        }
 
-            String marca() {
-                return "La marca del vehiculo es: Ford Mustang";
-            }
 
-            String modelo() {
-                return "El modelo del vehiculo es: Ford Mustang GT 2013";
-            }
 
-            int caballosmotor() {
-                return caballosmotor=420;
-            }
 
             void Arrancar() {
                 System.out.println("Encender");
